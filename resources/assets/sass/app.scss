@@ -1,0 +1,42 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+/* Viewport Image */
+
+.full-screen {
+  background-image: url(http://dexifly.com/exline/img/full-width/bg-3.jpg);
+}
+
+.parallax-fixed {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.full-screen {
+  height: 100vh;
+  width: 100%;
+}
+
+.small-section {
+  position: relative;
+  padding: 60px 0px;
+  overflow: hidden;
+}
+
+.table {
+  display: table;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
