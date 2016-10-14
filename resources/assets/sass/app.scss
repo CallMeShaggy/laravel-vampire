@@ -4,7 +4,7 @@
 /* Viewport Image */
 
 .full-screen {
-  background-image: url(http://dexifly.com/exline/img/full-width/bg-3.jpg);
+  background-image: url(https://s15.postimg.org/4s879tax7/vampire_4_wallpaper_1440x900.jpg);
 }
 
 .parallax-fixed {
@@ -39,4 +39,32 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+
+/* fluid 5 columns */
+.grid-sizer,
+.grid-item {
+  width: 20%;
+
+  img {
+    width: 100%;
+  }
+}
+/* 2 columns */
+.grid-item--width2 { width: 40%; }
+
+body {
+  background-color: #32383d;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.thumbnail {
+  background-color: #4c555c;
+}
+
+.test {
+  background-color: white;
 }
