@@ -9,7 +9,7 @@
         <script src="/js/jquery.easing.1.3.umd.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/masonry.pkgd.min.js"></script>
-        <script src="/js/imagesLoaded.pkgd.min.js"></script>
+        <script src="/js/imagesloaded.pkgd.min.js"></script>
         <script src="https://apis.google.com/js/api.js"></script>
         <script src="/js/all.js"></script>
     </head>
