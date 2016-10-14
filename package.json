@@ -10,8 +10,10 @@
     "bootstrap-sass": "^3.0.0"
   },
   "dependencies": {
+    "font-awesome": "^4.6.3",
     "imagesloaded": "^4.1.1",
     "jquery": "^3.1.1",
+    "jquery-easing": "0.0.1",
     "masonry-layout": "^4.1.1"
   }
 }
