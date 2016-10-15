@@ -15,7 +15,7 @@
 }
 
 .full-screen {
-  height: 92vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -55,22 +55,58 @@
 
 body {
   background-color: #141414 ;
-  padding-top: 50px;
 }
 
 .navbar {
   margin-bottom: 0px;
 }
 
-.thumbnail {
+.masonry-container-books div[class*="col"], .masonry-container-blogs div[class*="col"] {
+  padding: 0 10px;
+}
+
+
+.thumbnail:not(.blogs) {
   background-color: #141414;;
   margin-bottom: 0;
   border: none;
+  position: relative;
+  padding: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+
+  .grid-item--width2 & {
+    img {
+      width: 320px;
+      height: 240px;
+    }
+  }
+
+  &:hover .caption {
+    transform: translateY(10px);
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform 0.35s;
+  }
 
   img {
     width: 400px;
     height: 300px;
   }
+}
+
+.thumbnail {
+  background-color: #141414;;
+  margin-bottom: 0;
+  border: none;
+  position: relative;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .test {
@@ -84,16 +120,16 @@ body {
   border-bottom: 1px solid #1a1a1a;
 }
 
-.masonry-container div[class*="col"] {
-  padding: 0;
-}
-
-p, a {
+.blog-body, p, a {
   color: #BBBBBB;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
   text-align: center;
+  color: #BBBBBB;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
   color: #BBBBBB;
 }
 
@@ -209,13 +245,68 @@ ul {
   100% { transform:  rotate(45deg) translate(-5px, -5px); }
 }
 
+.nav-pills {
+  margin-bottom: 10px;
+}
+
 .nav-pills > li.active > a {
   background-color: #141414;
   color: #BBBBBB;
-  border: 2px solid #1a1a1a;
+  border: 2px solid #DDDDDD;
 }
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-  color: #141414;
-  background-color: #BBBBBB;
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus,  {
+  color :#BBBBBB;
+  background-color: #141414;
 }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #a50606;
+}
+
+
+
+h1,h2,h3,h4a,p,div,section {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.thumbnail {
+  a:hover{
+    text-decoration: none;
+
+    h3, p {
+      color: #a50606;
+    }
+  }
+}
+
+.modal-content {
+  background-color: #141414;
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}
+
+.blog-spacer {
+  margin-top: 50px;
+}
+
+.thumbnail img {
+  max-width: 100%;
+
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.thumbnail:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
