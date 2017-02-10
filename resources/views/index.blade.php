@@ -12,6 +12,7 @@
     <section class="full-screen">
         <div class="figure">
             <div class="hero-img-container">
+            <div class="hero-gradient"></div>
                <div class="hero-img">
                     <a href="#about" class="btn-scroll-down scroll page-scroll"></a>
                 </div>
@@ -19,12 +20,13 @@
         </div>
     </section>
 
-    @include('author')
+    <div class="author-content">
+        @include('author')
 
-    @include('books-and-blogs')
+        @include('books-and-blogs')
+    </div>
 
     @include('footer')
 
     @include('modal')
-
 @stop

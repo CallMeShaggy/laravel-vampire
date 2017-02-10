@@ -11,7 +11,7 @@
 @section('content')
     <div class="blog-spacer"></div>
     <div id="content">
-        <div class="container">
+        <div class="container blog-container">
             <section>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
