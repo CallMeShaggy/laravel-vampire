@@ -27,7 +27,11 @@ elixir(function(mix) {
         .copy(fontAwesomePath + '/fonts', 'public/font-awesome/fonts')
         .copy(fontAwesomePath + '/css/font-awesome.min.css', 'public/css')
         .copy(jqueryEasingPath + '/jquery.easing.1.3.umd.min.js', 'public/js');
+
+    mix.copy('resources/images', 'public/images')
+        .version('public/images');
 });
+
 
 elixir(function(mix) {
     mix.scripts([
