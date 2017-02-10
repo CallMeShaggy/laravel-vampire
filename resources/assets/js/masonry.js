@@ -98,6 +98,26 @@ $( document ).ready(function() {
         });
     });
 
+    //hero image opacity
+    var header = $('.hero-overlay');
+
+    $(window).on('scroll', function () {
+        var scrollTop = $(this).scrollTop();
+        var height = header.outerHeight() + 53;
+        var calc =  scrollTop / height;
+
+        header.css({ 'opacity': calc });
+
+        if ( calc > '1' ) {
+            header.css({ 'opacity': 1 });
+        } else if ( calc < '0' ) {
+            header.css({ 'opacity': 0 });
+        }
+
+    });
+
+
+
     var $container = $('.masonry-container-books').masonry({
         columnWidth: '.item',
         itemSelector: '.item'

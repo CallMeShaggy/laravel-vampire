@@ -20,7 +20,8 @@
   width: 100%;
 }
 
-.hero-img {
+.hero-img:after {
+  content: "";
   display: block;
   position: relative;
   height: calc(100vh - 52px);
@@ -38,6 +39,17 @@
 //  bottom: 0;
 //  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
 //}
+
+.hero-overlay {
+  z-index: 10;
+  opacity: 0;
+  background: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 
 .small-section {
   position: relative;
