@@ -8,6 +8,55 @@ function onLoadFn() {
     restRequest.then(function(resp) {
         console.log(resp.result);
 
+        var posts = resp.result.items;
+        var postList = [];
+
+        function truncate(string){
+            if (string.length > 300) {
+                var truncatedStr = string.substr(0,300)+'...';
+
+                return truncatedStr.replace(/(<([^>]+)>)/ig,"");
+            } else {
+                return string;
+            }
+        };
+
+        $.each(posts, function(i)
+        {
+            var container = $('<div/>')
+            var div = $('<div/>')
+                .addClass('col-md-4 col-sm-6 item')
+                .appendTo(container);
+            var thumbnail = $('<div/>')
+                .addClass('thumbnail blogs')
+                .appendTo(div);
+            var anchor = $('<a/>')
+                .attr('href', '/blog?id=' + posts[i].id)
+                .appendTo(thumbnail)
+            var caption = $('<div/>')
+                .addClass('caption')
+                .appendTo(anchor);
+            var title = $('<h3/>')
+                .text(posts[i].title)
+                .appendTo(caption);
+            var body = $('<p/>')
+                .text(truncate(posts[i].content))
+                .appendTo(caption);
+
+            postList.push(container.html());
+        });
+
+        var $postListHTML = postList.join("");
+
+        var $container = $('.masonry-container-books').masonry({
+            columnWidth: '.item',
+            itemSelector: '.item'
+        });
+
+        // add jQuery object
+        $container.append( $($postListHTML) ).masonry( 'appended', $($postListHTML), true );
+        $container.masonry('reloadItems');
+        $container.masonry('layout');
 
     }, function(reason) {
         console.log('Error: ' + reason.result.error.message);
@@ -16,7 +65,7 @@ function onLoadFn() {
     console.log('test');
 }
 
-gapi.load("client");
+gapi.load("client", onLoadFn);
 
 $( document ).ready(function() {
 
@@ -56,6 +105,10 @@ $( document ).ready(function() {
 
     $container.imagesLoaded().progress( function() {
         $container.masonry('layout');
+    });
+
+    $container.on( 'layoutComplete', function( event, items ) {
+        console.log( items.length );
     });
 
     //Reinitialize masonry inside each panel after the relative tab link is clicked -
