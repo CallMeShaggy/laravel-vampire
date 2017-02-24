@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @section('head')
-            <title>Laravel</title>
+            <title>David Patrick</title>
             <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
             <link href="/css/app.css" rel="stylesheet" type="text/css">
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="/">Lengend of The Vampires</a>
+                            <a class="navbar-brand" href="/">Legend of The Vampires</a>
                            </div>
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

@@ -43,7 +43,7 @@
 .hero-overlay {
   z-index: 10;
   opacity: 0;
-  background: black;
+  background: white;
   position: absolute;
   top: 0;
   right: 0;
@@ -170,13 +170,13 @@ h1, h2, h3, h4 {
 .profilePic {
   float: right;
   position: relative;
-  border: 1px solid black;
   overflow: hidden;
   padding: 125px;
   width: auto;
   max-width: 250px;
+  background: url("/images/author-image.jpg");
   background-color: white;
-  background-position: 0px 0px, center;
+  background-position: 0px -50px, center;
   margin: 0 auto;
   background-size: 100%;
 }
@@ -310,7 +310,7 @@ h1,h2,h3,h4a,p,div,section {
     text-decoration: none;
 
     h3, p {
-      color: #a50606;
+      color: #23527c;
     }
   }
 }
@@ -363,4 +363,20 @@ h1,h2,h3,h4a,p,div,section {
     margin-bottom: 0;
     padding-bottom: 40px;
   }
+}
+
+.blog-container {
+  background: white;
+}
+
+#about, #works {
+  background: #eee;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+ background: white;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #eee;
 }
