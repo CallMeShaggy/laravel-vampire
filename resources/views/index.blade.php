@@ -14,7 +14,6 @@
             <div class="hero-img-container">
             <div class="hero-overlay"></div>
                <div class="hero-img">
-                    <a href="#about" class="btn-scroll-down scroll page-scroll"></a>
                 </div>
             </div>
         </div>
