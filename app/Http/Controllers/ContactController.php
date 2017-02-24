@@ -13,7 +13,8 @@ class ContactController extends Controller
     public function sendEmail()
     {
         Mail::send('emails.contact', array('data' => $_POST), function($message) {
-            $message->to('guyjstitt@gmail.com');
+            $message->from('contact.legendofthevampires@gmail.com', 'LOTV');
+            $message->to('guyjstitt@gmail.com', 'new mail');
         });
 
         return Redirect::to('/');
