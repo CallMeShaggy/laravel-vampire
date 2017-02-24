@@ -1,0 +1,1 @@
+<p>From <?php echo $data['name']; ?></p>

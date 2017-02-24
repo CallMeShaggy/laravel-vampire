@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('/blog/', function () {
     return view('blog');
 });
+
+Route::post('/contact/', 'ContactController@sendEmail');
