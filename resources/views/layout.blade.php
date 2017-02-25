@@ -4,8 +4,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         @section('head')
             <title>David Patrick</title>
+            <meta name="description" content="Learn more about the author David Patrick"/>
             <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
             <link href="/css/app.css" rel="stylesheet" type="text/css">
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
