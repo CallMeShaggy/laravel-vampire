@@ -2,7 +2,7 @@ function onLoadFn() {
     gapi.client.setApiKey("AIzaSyDTNSUUSe2JwXfjUr_w18ebD0S0z3cUnLg");
 
     var restRequest = gapi.client.request({
-        'path': '/blogger/v3/blogs/359291528483942656/posts'
+        'path': '/blogger/v3/blogs/1510507368396379518/posts'
     });
 
     restRequest.then(function(resp) {
@@ -71,7 +71,7 @@ $( document ).ready(function() {
 
     if (window.location.pathname == "/blog") {
         var postId = window.location.search.replace('?id=', '');
-        var url = "https://www.googleapis.com/blogger/v3/blogs/359291528483942656/posts/" + postId + "?key=AIzaSyDTNSUUSe2JwXfjUr_w18ebD0S0z3cUnLg";
+        var url = "https://www.googleapis.com/blogger/v3/blogs/1510507368396379518/posts/" + postId + "?key=AIzaSyDTNSUUSe2JwXfjUr_w18ebD0S0z3cUnLg";
 
         $.get( url, function( data ) {
             console.log(data);
