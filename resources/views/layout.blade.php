@@ -34,13 +34,14 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="/">Legend of The Vampires</a>
+                            <a class="navbar-brand" href="/">Legend of the Vampires</a>
                            </div>
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a class="page-scroll" href="#about">About The Author</a></li>
                                 <li><a class="page-scroll" href="#works">Blogs & Books</a></li>
+                                <li><a href="/history/">Brief History on Vampires</a></li>
                                 <li><a data-toggle="modal" data-target="#myModal">Contact</a></li>
                             </ul>
                         </div>

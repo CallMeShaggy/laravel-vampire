@@ -19,4 +19,12 @@ Route::get('/blog/', function () {
     return view('blog');
 });
 
+Route::get('/history/', function () {
+    return view('history');
+});
+
+Route::get('/about/', function () {
+    return view('about');
+});
+
 Route::post('/contact/', 'ContactController@sendEmail');

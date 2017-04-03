@@ -8,9 +8,10 @@
           </div>
           <div class="col-sm-7 authorBio">
             <h1>David Allen Patrick</h1>
-            <p>Vampires never appealed to David Patrick when he decided to write a whole series on the vampire mythology. Even after he finished his first book, he still had not seen a single movie, read a story, or played a video game on vampires. So what actually fascinated David in his childhood and adolescence, and why did he ever decide to publish a novel about vampires if he did not like them?</p>
+            <p>
+            Vampires never before appealed to David Patrick when he decided to write a whole series on the vampire mythology. Even after he finished his first book, he still had not seen a single movie, read a story, or played a video game on vampires. So what actually fascinated David in his childhood and adolescence, and why did he ever decide to publish a novel about vampires if he did not like them? <a href="/about" class="read-more">Read more</a>
+            </p>
             <ul>
-
                 <a data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
             </ul>
           </div>

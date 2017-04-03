@@ -1,0 +1,81 @@
+@extends('layout')
+
+@section('head')
+    @parent
+@stop
+
+@section('nav')
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Legend of the Vampires</a>
+               </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="/#about">About The Author</a></li>
+                    <li><a class="page-scroll" href="/#works">Blogs & Books</a></li>
+                    <li><a data-toggle="modal" href="/history/">Brief History on Vampires</a></li>
+                    <li><a data-toggle="modal" data-target="#myModal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+@stop
+
+@section('content')
+    <section id="about-dedicated" class="container">
+    <h1>A Brief History on Vampires</h1>
+    <h3>David Patrick</h3>
+    <p><span><span>&nbsp;</span></span></p>
+    <p dir="ltr"><span>Vampires did not originate with Dracula. The timeline of the vampire mythology stretches back far beyond the classic literature of Bram Stoker and even his historical inspiration from Prince of Wallachia Vlad III &ldquo;the Impaler.&rdquo; Europeans did not conceive the first legend of the vampires. Cultural historian and writer for </span><span>The Monster Show </span><span>David J. Skal contends that the chronology of the vampires dates back to ancient times in Mesopotamia and even intertwines with the werewolf traditions (Steiger 92). Consequently, understanding this progressive and eclectic mythos necessitates a basic comprehension of the assorted languages of the Afro-Asiatic cultures. </span></p>
+    <p dir="ltr"><span>No universal word exists for the vampire. Montague Summers, a nineteenth century Catholic clergyman who wrote scholarly works on vampirism and the Occult, embraces the theory that the word </span><span>vampire </span><span>stems from the Turkish or Galatian etymon </span><span>uber</span><span>, meaning &ldquo;witch,&rdquo; and when anglicized is rendered several different ways, including </span><span>vampir, oupir, </span><span>and </span><span>orupir</span><span> (Jenkins 192-193). The Romanian language further supports this conjecture with its word for the vampire&mdash;</span><span>strigoi, </span><span>the &ldquo;spirit of a witch&rdquo; (Jenkins 169-170, 200). This fits with both the Ukrainian superstition that suggests witches bred vampires from copulation with werewolves or demons and the Russian superstition that suggests witches or sorcerers transformed into wolves (Jenkins 170). The Greek-Bulgarians once called the vampires </span><span>drakus</span><span>&mdash;&ldquo;dragons&rdquo;&mdash;from which came the Romanian </span><span>dracul</span><span>, a folkloric dragon that becomes a man, seduces women, and spirits away to its underworld lair (Melton 212). </span></p>
+    <p dir="ltr"><span>Other superstitions suggested that witches would transform into wolves by wearing the skin of a wolf, bear, fox, or mountain lion and then travel in stealth by night for secret meeting places where the witches would plot against their enemies, initiate new members, eat human flesh, and engage in necrophilia (Steiger 66). This introduced a subtle relationship in thought between the corpse and the vampire. </span></p>
+    <p dir="ltr"><span>Some of the Far East cultures blended the corpse and the vampire. The Chinese vampire </span><span>ch&rsquo;ing shih, </span><span>a corpse rather than a witch, transformed</span><span>into a wolf after the yang energy of the moonlight overwhelmed its earthly soul called </span><span>p&rsquo;o </span><span>(Jenkins 234). The concept of the witch lost its authority in conventional thought as the corpse replaced it over time. However, the belief in the significance of the moon was not isolated to the Far East since the Babylonians also placed dominance of the moon over the sun (Steiger 120) and still today remains central to the mythology of the literal transformation. These ancient traditions furthermore perpetuated the wolf as the most prominent transformation while the Romanians accepted the bat, which they recognized as a messenger of bad luck (McNally and Florescu 11). </span></p>
+    <p dir="ltr"><span>When the Church inevitably encountered the vampire mythology that had already spread throughout pagan Europe during the Middle Ages, it dismissed the concept as a false religion and later linked vampirism to the devil (Melton 128-129). However, others believed that God endowed Orthodox Christian priests with the power to curse a man and transform him into a vampire by excommunicating him through an incantation: &ldquo;and the earth shall not receive thy body.&rdquo; This stems from a commonly held primitive belief that the forces of Heaven and Hell gathered to battle for one&rsquo;s soul at the moment of death, so rites were performed before expiration to either purify the soul or condemn it (Jenkins 164-165). </span></p>
+    <p dir="ltr"><span>But the Church began linking mostly demonic possession with vampirism, which became an infernal parody of the Resurrection&mdash;a typological inverse of the saints (Jenkins 168). Medieval Christianity furthermore condemned the bat as an agent of death or even of Satan (Melton 51). Medieval Christians also believed in a fleshly resurrection, not simply a spiritual one, and therefore abhorred cremation&mdash;a pagan ritual that destroyed the &ldquo;Temple of the Holy Ghost&rdquo; and consequently denied the soul a vehicle of restoration (Jenkins 166). Therefore, incinerating a corpse identified as a vampire would eradicate the evil spirit forever.</span></p>
+    <p dir="ltr"><span>The early Church also knew of the abundant pagan shrines to the heathen gods, especially concentrated in the mountains, so the newly Christianized Roman Empire declared that the mountain habitat belonged to the devil (Mack 67). &nbsp;Recall that Bram Stoker wrote of how Dracula lived in his castle among the Caucus Mountains. </span></p>
+    <p dir="ltr"><span>Incidentally, though Dracula represents the whole of vampires, no single figure exists for werewolves (Steiger 93). This might explain how the wolf lost its clout as the vampire mythology continued to virally spread across the eastern world. </span></p>
+    <p dir="ltr"><span>Many Europeans started identifying vampirism as a contagion rather than an enchantment as science advanced, and language reinforced this notion, such as the Greek word </span><span>nosophorus</span><span>, meaning &ldquo;plague carrier.&rdquo; This influenced the Old Slavonic word </span><span>nesufur-atu</span><span>, which Bram Stoker later modernized and popularized as </span><span>nosferatu </span><span>in his literary classic </span><span>Dracula</span><span> (Jenkins 14, Melton 496-500).</span></p>
+    <p dir="ltr"><span>Eventually folklore downplayed the wolf and bat transformations in favor of mist. This trifling form explained how the vampire, now commonly accepted as a corpse and not a witch, could leave its grave and later return without disturbing the topsoil that covered its coffin (Melton 17, 467). </span></p>
+    <p dir="ltr"><span>But despite the evolution of the identity of the vampire, one prominent feature survived the waves of time.</span></p>
+    <p dir="ltr"><span>Blood consumption.</span></p>
+    <p dir="ltr"><span>This raises the most obvious question.</span></p>
+    <p dir="ltr"><span>Why did we ever associate vampires with sucking blood?</span></p>
+    <p dir="ltr"><span>The ancient world first associated vampires with demons whom the cradle of civilization characterized as disembodied spirits that sought blood for sustenance. Other early people groups shared this belief, especially the Indians and Grecians (Melton xxx). The prehistoric Indo-Europeans revered the vampire, or demon, as a god or residue of an ancient deity and even offered sacrifices to this bloodthirsty deity (Jenkins 189-190). </span></p>
+    <p dir="ltr"><span>This deeply held conviction survived early civilization. Dominican priest Simon Grunau wrote in the </span><span>Prussian Chronicle </span><span>about a Slavic pagan shrine filled with idols hung high to honor the Death God who thirsted for blood and wore human skulls as garlands (Melton 191). Saxon priest Helmod wrote that the </span><span>Chronicle of the Slavs </span><span>confirmed that pagan priests would drink the blood of human sacrifices to become &ldquo;potent&rdquo; and more easily summon demons (Melton 194). Thus, a powerful bond formed between the vampire, the demon, the god, and most importantly the blood. </span></p>
+    <p dir="ltr"><span>Semitic and proto-Sumerian words convey this quintessential peculiarity of the vampire, such as the Hebrew word </span><span>aluka&mdash;</span><span>a Syrian-Hebraic deviation of the Arabic word </span><span>ghoul&mdash;</span><span>which</span><span>means &ldquo;leech&rdquo; or &ldquo;to hang to&rdquo; (Melton 10-11). The primitive Semites appropriately identified this segmented worm with its chief function of siphoning blood through bite marks in the flesh of humans or animals, and this thirst for blood constitutes the most primeval essence of the vampire. </span></p>
+    <p dir="ltr"><span>Kabbalist Rabbi Menahem Zioni identified the Semitic rebels who tried climbing the Tower of Babel to reach God&rsquo;s Throne as </span><span>estries </span><span>whom the LORD cursed into vampires, werewolves, and other monsters (Melton 239). Some Kabbalists and Chasidics believe in a polygenesis cosmogony, such as Pre-Adamism and Co-Adamism, which incorporates other cultural influences, such as the origin of the </span><span>estries&mdash;</span><span>women allegedly created at sunset on the sixth day of Creation before the first Sabbath in Judeo-Christianity. Other Kabbalists and Chasidics equate the </span><span>estries </span><span>to Lilith, originally the Sumerian wind spirit of the wastelands (Jenkins 228) or a barren vampire harlot in the Babylonian </span><span>Epic of Gilgamesh </span><span>of circa-2000 B.C. who settled in the desert away from her home near the Euphrates River (Melton 424). </span></p>
+    <p dir="ltr"><span>The mystery of the Lilith figure naturally evolved over time, eventually even found once in the Holy Scriptures. The prophet Isaiah foretold in chapter thirty-four and verse fourteen of the &ldquo;Great Day of God&rsquo;s Wrath&rdquo; when the land will turn into a desert wasteland and that &ldquo;Lilith shall . . . find her place of rest.&rdquo; Since Lilith, or the original Hebrew </span><span>lilit, </span><span>is a </span><span>hapax legomenon</span><span>, the ambiguity inevitably results in multiple interpretations surrounding the inexplicable &ldquo;night creature.&rdquo; </span></p>
+    <p dir="ltr"><span>Though mainstream Christendom accepts the translations of the Greek Septuagint and King James Version as &ldquo;wild beasts,&rdquo; other accepted translations include &ldquo;demons.&rdquo; German orientalist Eberhard Schrader, a specialist in Assyriology, suggests Lilith was a night goddess whom the Jewish exiles in Babylon recognized. Tradition suggests that Lilith fled from her husband Adam in the Garden of Eden to the Red Sea, an abode for demons according to the Talmud, and transformed into this monstrous &ldquo;night creature&rdquo; that bore many children from many lovers. Other traditions recognize these children as vampires, or a special class of demons fathered by Lilith and her husband Ashmedai, or Asmodeus, the &ldquo;God of Wrath.&rdquo; These two figures became the king and queen of demons, and later, Christian scholars equated Ashmedai to Satan (Mack 189, 269). </span></p>
+    <p dir="ltr"><span>She ultimately returned with her cohorts to haunt Adam and his second wife Eve after her banishment from the Garden of Eden, sexually abusing Adam and Eve to father their half-breed demon children (Melton 425). Lilith finally assumed the title &ldquo;Queen of the Succubi&rdquo; by the Middle Ages (Jenkins 228). The world officially recognized her as the first female vampire and from her matrix came the legion of vampires dwelling among mankind.</span></p>
+    <p dir="ltr"><span>However, tradition further asserts that Lilith made a pact with three angels while in the desert to not use her vampire powers over babies if protected by an amulet. This antediluvian legend of special amulets and charms developed into various objects, including horseshoes, hares&rsquo; heads, boars&rsquo; tusks nailed to walls, blue beads, or bloodstones decorated around homes (Jenkins 169). One of the most universal charms was the medicinal herb garlic, thought to ward off spirits since its odor ostracized people from intimate contact or even worship during goddess and fertility rites (Steiger 123, Melton 125). </span></p>
+    <p dir="ltr"><span>But the Church accepted other charms, such as the crucifix to frighten away a vampire without killing it. Roses also deterred vampire attacks, especially Hawthorn, since tradition indicates the Romans made the crown of Christ from this small tree, a symbol of hope and used against witchcraft and sorcery (Melton 337-338). Vampires also shied away from the color white. The color silver did not encumber them, but the metal silver or silver-plated bullets turned them to dust. </span></p>
+    <p dir="ltr"><span>All the major world religions and the countless cultures of at least the last 6,000 years all share some idea of the vampire figure disguised by a myriad of different names and titles. The vampires began their journey from conception as gods and demon spirits and slowly morphed over time into immortal humans endowed or cursed with preternatural powers. Methods of protection and execution adjusted as technology developed, and the shift from primal instinct to civilization allowed the monstrous beasts of the wilderness to grow into dashing gentlemen&mdash;but still with a taste for blood. As King Solomon once lamented in the first chapter and ninth verse of Ecclesiastes, &ldquo;What has been will be again, what has been done will be done again; there is nothing new under the sun.&rdquo;</span></p>
+    <p><span><span>&nbsp;</span></span></p>
+    <p dir="ltr"><span> &nbsp;&nbsp;</span></p>
+    <p><span><span><br /><br /><br /><br /><br /></span></span></p>
+    <p dir="ltr"><span>WORKS CITED</span></p>
+    <p><span><span>&nbsp;</span></span></p>
+    <p dir="ltr"><span>Collins Jenkins, Mark. </span><span>Vampire Forensics: Uncovering the Origins of an Enduring Legend. </span><span>National Geographic, 2011. </span></p>
+    <p><span><span>&nbsp;</span></span></p>
+    <p dir="ltr"><span>Mack, Carol K. and Dinah. </span><span>A Field Guide to Demons, Vampires, Fallen Angels and Other Subversive Spirits. </span><span>Arcade Publishing, 2011. </span></p>
+    <p><span><span>&nbsp;</span></span></p>
+    <p dir="ltr"><span>McNally, Raymond T., and Radu Florescu. </span><span>In Search of Dracula: The Enthralling History of Dracula and Vampires. </span><span>Robson Books Ltd, 1995. </span></p>
+    <p><span><span>&nbsp;</span></span></p>
+    <p dir="ltr"><span>Gordon Melton, J. </span><span>The Vampire Book: The Encyclopedia of the Undead. </span><span>3rd ed. Visible Ink Press, 2010. </span></p>
+    <p><span><span>&nbsp;</span></span></p>
+    <p dir="ltr"><span>Steiger, Brad. </span><span>The Werewolf Book: The Encyclopedia of Shape-Shifting Beings. </span><span>Visible Ink Press, 1999. </span></p>
+    </section>
+
+    @include('footer')
+
+    @include('modal')
+@stop

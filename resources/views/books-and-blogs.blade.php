@@ -9,7 +9,7 @@
 
           <div class="col-md-4 col-sm-6 item">
             <div class="thumbnail">
-              <img src="/images/front-cover-300.jpg" alt="">
+              <img src="/images/nero-3d-500.png" alt="">
             </div>
           </div><!--/.item  -->
 
