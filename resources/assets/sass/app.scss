@@ -3,6 +3,12 @@
 
 /* Viewport Image */
 
+
+
+.grecaptcha-badge {
+  display: none;
+}
+
 .full-screen {
   display: block;
   position: relative;
@@ -399,4 +405,10 @@ h1,h2,h3,h4a,p,div,section {
 
 .test {
   background: blue;
+}
+
+.modal-footer {
+  div {
+    display: none;
+  }
 }

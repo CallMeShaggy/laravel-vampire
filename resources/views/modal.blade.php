@@ -7,7 +7,7 @@
         <h4 class="modal-title" id="myModalLabel">Email The Author</h4>
       </div>
       <div class="modal-body">
-          <form name="Contact" action="/contact/" method="post">
+          <form id="contact-form" name="Contact" action="/contact/" method="post">
             {{ csrf_field() }}
             <div class="row">
               <div class="col-md-6">
@@ -33,8 +33,14 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <input type="submit" class="btn btn-primary" value="Submit">
-              </div>
+                <button
+                  class="g-recaptcha btn btn-primary"
+                  data-sitekey="6LeyBh0UAAAAAJhIo3Cg2DklzfN1Okb6J_qFmQe1"
+                  data-callback="onSubmit">
+                  Submit
+                </button>
+            </div>
+        
           </form>
       </div>
     </div>

@@ -21,6 +21,13 @@
             <script src="/js/all.js"></script>
 
         @show
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script>
+           function onSubmit(token) {
+             document.getElementById("contact-form").submit();
+             console.log('test');
+           }
+        </script>
     </head>
     <body>
         @section('nav')
