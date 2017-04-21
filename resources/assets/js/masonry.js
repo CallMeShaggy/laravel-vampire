@@ -32,15 +32,12 @@ function onLoadFn() {
                 .appendTo(div);
             var anchor = $('<a/>')
                 .attr('href', '/blog?id=' + posts[i].id)
-                .appendTo(thumbnail)
+                .appendTo(thumbnail);
             var caption = $('<div/>')
                 .addClass('caption')
                 .appendTo(anchor);
             var title = $('<h3/>')
                 .text(posts[i].title)
-                .appendTo(caption);
-            var body = $('<p/>')
-                .text(truncate(posts[i].content))
                 .appendTo(caption);
 
             postList.push(container.html());
@@ -48,7 +45,7 @@ function onLoadFn() {
 
         var $postListHTML = postList.join("");
 
-        var $container = $('.masonry-container-books').masonry({
+        var $container = $('.masonry-container-books  ').masonry({
             columnWidth: '.item',
             itemSelector: '.item'
         });

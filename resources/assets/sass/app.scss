@@ -155,6 +155,11 @@ body {
 
 .blog-body, p, a {
   color: #8d8d8d;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -183,7 +188,7 @@ h1, h2, h3, h4 {
   background: url("/images/author-image.jpg");
   background-color: white;
   background-position: 0px -50px, center;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   background-size: 100%;
 }
 
@@ -410,5 +415,20 @@ h1,h2,h3,h4a,p,div,section {
 .modal-footer {
   div {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .profilePic {
+    float: none;
+  }
+
+  .authorBio {
+    clear: both;
+
+    * {
+      width: 100%;
+      max-width: none !important;
+    }
   }
 }
